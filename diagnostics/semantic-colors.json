@@ -1,0 +1,2078 @@
+{
+  "resolved": 320,
+  "unresolved": 146,
+  "withheld": 75,
+  "totalTokensPerMode": 395,
+  "emitted": 320,
+  "modes": ["light", "dark"],
+  "summary": {
+    "byRootCause": {
+      "missing-primitive": 9,
+      "deprecated-primitive": 62,
+      "upstream-alias-unresolved": 4
+    },
+    "rootCauseCount": 3,
+    "cycles": 0
+  },
+  "failuresByRootCause": [
+    {
+      "rootCause": "missing-primitive",
+      "title": "Alias targets an approved primitive absent from the primitives export",
+      "suggestion": "Re-export the Figma primitives collection including these groups. They are marked approved (✅) in Figma, so their absence is an incomplete export rather than a design decision.",
+      "unresolvedAliases": 17,
+      "affectedTokenCount": 9,
+      "affectedTokens": [
+        "text-creative-green",
+        "utility-indigo-100",
+        "utility-indigo-200",
+        "utility-indigo-300",
+        "utility-indigo-400",
+        "utility-indigo-50",
+        "utility-indigo-500",
+        "utility-indigo-600",
+        "utility-indigo-700"
+      ],
+      "references": [
+        {
+          "reference": "Colors/Indigo ✅/300",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-indigo-300", "utility-indigo-700"]
+        },
+        {
+          "reference": "Colors/Indigo ✅/400",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-indigo-400", "utility-indigo-600"]
+        },
+        {
+          "reference": "Colors/Indigo ✅/600",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-indigo-400", "utility-indigo-600"]
+        },
+        {
+          "reference": "Colors/Indigo ✅/700",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-indigo-300", "utility-indigo-700"]
+        },
+        {
+          "reference": "Colors/Green ✅/300",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["text-creative-green"]
+        },
+        {
+          "reference": "Colors/Indigo ✅/100",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-indigo-100"]
+        },
+        {
+          "reference": "Colors/Indigo ✅/200",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-indigo-200"]
+        },
+        {
+          "reference": "Colors/Indigo ✅/50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-indigo-50"]
+        },
+        {
+          "reference": "Colors/Indigo ✅/500",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-indigo-500"]
+        },
+        {
+          "reference": "Colors/Indigo ✅/800",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-indigo-200"]
+        },
+        {
+          "reference": "Colors/Indigo ✅/900",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-indigo-100"]
+        },
+        {
+          "reference": "Colors/Indigo ✅/950",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-indigo-50"]
+        }
+      ]
+    },
+    {
+      "rootCause": "deprecated-primitive",
+      "title": "Alias targets a primitive group Figma marks deprecated (❌)",
+      "suggestion": "A design decision, not an export problem. In Figma either repoint these semantic tokens at the approved equivalent — e.g. replace green❌ with Green ✅ — or restore the group as approved if it is still in use.",
+      "unresolvedAliases": 121,
+      "affectedTokenCount": 62,
+      "affectedTokens": [
+        "bg-creative-red",
+        "text-creative-blue",
+        "text-creative-orange",
+        "text-creative-red",
+        "text-creative-yellow",
+        "text-yellow-secondary",
+        "utility-blue-100",
+        "utility-blue-200",
+        "utility-blue-300",
+        "utility-blue-400",
+        "utility-blue-50",
+        "utility-blue-500",
+        "utility-blue-600",
+        "utility-blue-700",
+        "utility-blue-dark-100",
+        "utility-blue-dark-200",
+        "utility-blue-dark-300",
+        "utility-blue-dark-400",
+        "utility-blue-dark-50",
+        "utility-blue-dark-500",
+        "utility-blue-dark-600",
+        "utility-blue-dark-700",
+        "utility-gray-blue-100",
+        "utility-gray-blue-200",
+        "utility-gray-blue-300",
+        "utility-gray-blue-400",
+        "utility-gray-blue-50",
+        "utility-gray-blue-500",
+        "utility-gray-blue-600",
+        "utility-gray-blue-700",
+        "utility-green-100",
+        "utility-green-200",
+        "utility-green-300",
+        "utility-green-400",
+        "utility-green-50",
+        "utility-green-500",
+        "utility-green-600",
+        "utility-green-700",
+        "utility-orange-100",
+        "utility-orange-200",
+        "utility-orange-300",
+        "utility-orange-400",
+        "utility-orange-50",
+        "utility-orange-500",
+        "utility-orange-600",
+        "utility-orange-700",
+        "utility-orange-dark-100",
+        "utility-orange-dark-200",
+        "utility-orange-dark-300",
+        "utility-orange-dark-400",
+        "utility-orange-dark-50",
+        "utility-orange-dark-500",
+        "utility-orange-dark-600",
+        "utility-orange-dark-700",
+        "utility-yellow-100",
+        "utility-yellow-200",
+        "utility-yellow-300",
+        "utility-yellow-400",
+        "utility-yellow-50",
+        "utility-yellow-500",
+        "utility-yellow-600",
+        "utility-yellow-700"
+      ],
+      "references": [
+        {
+          "reference": "Colors/yellow❌/300",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 4,
+          "affectedTokens": [
+            "text-creative-yellow",
+            "text-yellow-secondary",
+            "utility-yellow-300",
+            "utility-yellow-700"
+          ]
+        },
+        {
+          "reference": "Colors/blue❌/300",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 3,
+          "affectedTokens": ["text-creative-blue", "utility-blue-300", "utility-blue-700"]
+        },
+        {
+          "reference": "Colors/orange-dark❌/300",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 3,
+          "affectedTokens": [
+            "text-creative-orange",
+            "utility-orange-dark-300",
+            "utility-orange-dark-700"
+          ]
+        },
+        {
+          "reference": "Colors/orange❌/600",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 3,
+          "affectedTokens": ["text-creative-orange", "utility-orange-400", "utility-orange-600"]
+        },
+        {
+          "reference": "Colors/blue dark❌/300",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-blue-dark-300", "utility-blue-dark-700"]
+        },
+        {
+          "reference": "Colors/blue dark❌/400",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-blue-dark-400", "utility-blue-dark-600"]
+        },
+        {
+          "reference": "Colors/blue dark❌/600",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-blue-dark-400", "utility-blue-dark-600"]
+        },
+        {
+          "reference": "Colors/blue dark❌/700",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-blue-dark-300", "utility-blue-dark-700"]
+        },
+        {
+          "reference": "Colors/blue❌/400",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-blue-400", "utility-blue-600"]
+        },
+        {
+          "reference": "Colors/blue❌/600",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-blue-400", "utility-blue-600"]
+        },
+        {
+          "reference": "Colors/blue❌/700",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-blue-300", "utility-blue-700"]
+        },
+        {
+          "reference": "Colors/grayblue❌/300",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-gray-blue-300", "utility-gray-blue-700"]
+        },
+        {
+          "reference": "Colors/grayblue❌/400",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-gray-blue-400", "utility-gray-blue-600"]
+        },
+        {
+          "reference": "Colors/grayblue❌/600",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-gray-blue-400", "utility-gray-blue-600"]
+        },
+        {
+          "reference": "Colors/grayblue❌/700",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-gray-blue-300", "utility-gray-blue-700"]
+        },
+        {
+          "reference": "Colors/green❌/300",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-green-300", "utility-green-700"]
+        },
+        {
+          "reference": "Colors/green❌/400",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-green-400", "utility-green-600"]
+        },
+        {
+          "reference": "Colors/green❌/600",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-green-400", "utility-green-600"]
+        },
+        {
+          "reference": "Colors/green❌/700",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-green-300", "utility-green-700"]
+        },
+        {
+          "reference": "Colors/orange-dark❌/400",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-orange-dark-400", "utility-orange-dark-600"]
+        },
+        {
+          "reference": "Colors/orange-dark❌/600",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-orange-dark-400", "utility-orange-dark-600"]
+        },
+        {
+          "reference": "Colors/orange-dark❌/700",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-orange-dark-300", "utility-orange-dark-700"]
+        },
+        {
+          "reference": "Colors/orange❌/300",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-orange-300", "utility-orange-700"]
+        },
+        {
+          "reference": "Colors/orange❌/400",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-orange-400", "utility-orange-600"]
+        },
+        {
+          "reference": "Colors/orange❌/700",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-orange-300", "utility-orange-700"]
+        },
+        {
+          "reference": "Colors/red❌/600",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["bg-creative-red", "text-creative-red"]
+        },
+        {
+          "reference": "Colors/yellow❌/400",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-yellow-400", "utility-yellow-600"]
+        },
+        {
+          "reference": "Colors/yellow❌/600",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-yellow-400", "utility-yellow-600"]
+        },
+        {
+          "reference": "Colors/yellow❌/700",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 2,
+          "affectedTokens": ["utility-yellow-300", "utility-yellow-700"]
+        },
+        {
+          "reference": "Colors/blue dark❌/100",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-dark-100"]
+        },
+        {
+          "reference": "Colors/blue dark❌/200",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-dark-200"]
+        },
+        {
+          "reference": "Colors/blue dark❌/50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-dark-50"]
+        },
+        {
+          "reference": "Colors/blue dark❌/500",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-dark-500"]
+        },
+        {
+          "reference": "Colors/blue dark❌/800",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-dark-200"]
+        },
+        {
+          "reference": "Colors/blue dark❌/900",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-dark-100"]
+        },
+        {
+          "reference": "Colors/blue dark❌/950",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-dark-50"]
+        },
+        {
+          "reference": "Colors/blue❌/100",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-100"]
+        },
+        {
+          "reference": "Colors/blue❌/200",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-200"]
+        },
+        {
+          "reference": "Colors/blue❌/50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-50"]
+        },
+        {
+          "reference": "Colors/blue❌/500",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-500"]
+        },
+        {
+          "reference": "Colors/blue❌/800",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-200"]
+        },
+        {
+          "reference": "Colors/blue❌/900",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-100"]
+        },
+        {
+          "reference": "Colors/blue❌/950",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-blue-50"]
+        },
+        {
+          "reference": "Colors/grayblue❌/100",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-gray-blue-100"]
+        },
+        {
+          "reference": "Colors/grayblue❌/200",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-gray-blue-200"]
+        },
+        {
+          "reference": "Colors/grayblue❌/50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-gray-blue-50"]
+        },
+        {
+          "reference": "Colors/grayblue❌/500",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-gray-blue-500"]
+        },
+        {
+          "reference": "Colors/grayblue❌/800",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-gray-blue-200"]
+        },
+        {
+          "reference": "Colors/grayblue❌/900",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-gray-blue-100"]
+        },
+        {
+          "reference": "Colors/grayblue❌/950",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-gray-blue-50"]
+        },
+        {
+          "reference": "Colors/green❌/100",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-green-100"]
+        },
+        {
+          "reference": "Colors/green❌/200",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-green-200"]
+        },
+        {
+          "reference": "Colors/green❌/50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-green-50"]
+        },
+        {
+          "reference": "Colors/green❌/500",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-green-500"]
+        },
+        {
+          "reference": "Colors/green❌/800",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-green-200"]
+        },
+        {
+          "reference": "Colors/green❌/900",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-green-100"]
+        },
+        {
+          "reference": "Colors/green❌/950",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-green-50"]
+        },
+        {
+          "reference": "Colors/orange-dark❌/100",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-dark-100"]
+        },
+        {
+          "reference": "Colors/orange-dark❌/200",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-dark-200"]
+        },
+        {
+          "reference": "Colors/orange-dark❌/50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-dark-50"]
+        },
+        {
+          "reference": "Colors/orange-dark❌/500",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-dark-500"]
+        },
+        {
+          "reference": "Colors/orange-dark❌/800",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-dark-200"]
+        },
+        {
+          "reference": "Colors/orange-dark❌/900",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-dark-100"]
+        },
+        {
+          "reference": "Colors/orange-dark❌/950",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-dark-50"]
+        },
+        {
+          "reference": "Colors/orange❌/100",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-100"]
+        },
+        {
+          "reference": "Colors/orange❌/200",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-200"]
+        },
+        {
+          "reference": "Colors/orange❌/50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-50"]
+        },
+        {
+          "reference": "Colors/orange❌/500",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-500"]
+        },
+        {
+          "reference": "Colors/orange❌/800",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-200"]
+        },
+        {
+          "reference": "Colors/orange❌/900",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-100"]
+        },
+        {
+          "reference": "Colors/orange❌/950",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-orange-50"]
+        },
+        {
+          "reference": "Colors/red❌/300",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["text-creative-red"]
+        },
+        {
+          "reference": "Colors/red❌/50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["bg-creative-red"]
+        },
+        {
+          "reference": "Colors/yellow❌/100",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-yellow-100"]
+        },
+        {
+          "reference": "Colors/yellow❌/200",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-yellow-200"]
+        },
+        {
+          "reference": "Colors/yellow❌/50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-yellow-50"]
+        },
+        {
+          "reference": "Colors/yellow❌/500",
+          "modes": ["dark", "light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-yellow-500"]
+        },
+        {
+          "reference": "Colors/yellow❌/800",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-yellow-200"]
+        },
+        {
+          "reference": "Colors/yellow❌/900",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-yellow-100"]
+        },
+        {
+          "reference": "Colors/yellow❌/950",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["utility-yellow-50"]
+        }
+      ]
+    },
+    {
+      "rootCause": "upstream-alias-unresolved",
+      "title": "Alias resolves to another semantic token that is itself unresolved",
+      "suggestion": "Nothing to fix here — the failure is upstream. These recover automatically once the root cause they depend on is resolved, so fix the other causes first and re-generate.",
+      "unresolvedAliases": 8,
+      "affectedTokenCount": 4,
+      "affectedTokens": [
+        "bg-creative-blue",
+        "bg-creative-green",
+        "bg-creative-orange",
+        "bg-creative-yellow"
+      ],
+      "references": [
+        {
+          "reference": "Component colors.Utility.Blue ✅.utility-blue-50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["bg-creative-blue"]
+        },
+        {
+          "reference": "Component colors.Utility.Blue ✅.utility-blue-600",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["bg-creative-blue"]
+        },
+        {
+          "reference": "Component colors.Utility.Green ✅.utility-green-50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["bg-creative-green"]
+        },
+        {
+          "reference": "Component colors.Utility.Green ✅.utility-green-600",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["bg-creative-green"]
+        },
+        {
+          "reference": "Component colors.Utility.Orange dark ✅.utility-orange-dark-600",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["bg-creative-orange"]
+        },
+        {
+          "reference": "Component colors.Utility.Orange ✅.utility-orange-50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["bg-creative-orange"]
+        },
+        {
+          "reference": "Component colors.Utility.Yellow ✅.utility-yellow-50",
+          "modes": ["light"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["bg-creative-yellow"]
+        },
+        {
+          "reference": "Component colors.Utility.Yellow ✅.utility-yellow-600",
+          "modes": ["dark"],
+          "affectedTokenCount": 1,
+          "affectedTokens": ["bg-creative-yellow"]
+        }
+      ]
+    }
+  ],
+  "missingPrimitiveGroups": ["Green", "Indigo"],
+  "deprecatedPrimitiveGroups": [
+    "blue",
+    "blue dark",
+    "grayblue",
+    "green",
+    "orange",
+    "orange-dark",
+    "red",
+    "yellow"
+  ],
+  "cycles": [],
+  "withheldTokens": [
+    {
+      "token": "bg-creative-blue",
+      "figmaPath": "Colors.Background ✅.bg-creative-blue",
+      "rootCauses": ["upstream-alias-unresolved"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "bg-creative-green",
+      "figmaPath": "Colors.Background ✅.bg-creative-green",
+      "rootCauses": ["upstream-alias-unresolved"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "bg-creative-orange",
+      "figmaPath": "Colors.Background ✅.bg-creative-orange",
+      "rootCauses": ["upstream-alias-unresolved"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "bg-creative-red",
+      "figmaPath": "Colors.Background ✅.bg-creative-red",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "bg-creative-yellow",
+      "figmaPath": "Colors.Background ✅.bg-creative-yellow",
+      "rootCauses": ["upstream-alias-unresolved"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "text-creative-blue",
+      "figmaPath": "Colors.Text ✅.text-creative-blue (600)",
+      "rootCauses": ["deprecated-primitive", "upstream-alias-unresolved"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "text-creative-green",
+      "figmaPath": "Colors.Text ✅.text-creative-green (600)",
+      "rootCauses": ["missing-primitive", "upstream-alias-unresolved"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "text-creative-orange",
+      "figmaPath": "Colors.Text ✅.text-creative-orange (600)",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "text-creative-red",
+      "figmaPath": "Colors.Text ✅.text-creative-red (600)",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "text-creative-yellow",
+      "figmaPath": "Colors.Text ✅.text-creative-yellow (600)",
+      "rootCauses": ["deprecated-primitive", "upstream-alias-unresolved"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "text-yellow-secondary",
+      "figmaPath": "Colors.Text ✅.text-yellow-secondary (700)",
+      "rootCauses": ["deprecated-primitive", "upstream-alias-unresolved"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-100",
+      "figmaPath": "Component colors.Utility.Blue ✅.utility-blue-100",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-200",
+      "figmaPath": "Component colors.Utility.Blue ✅.utility-blue-200",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-300",
+      "figmaPath": "Component colors.Utility.Blue ✅.utility-blue-300",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-400",
+      "figmaPath": "Component colors.Utility.Blue ✅.utility-blue-400",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-50",
+      "figmaPath": "Component colors.Utility.Blue ✅.utility-blue-50",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-500",
+      "figmaPath": "Component colors.Utility.Blue ✅.utility-blue-500",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-600",
+      "figmaPath": "Component colors.Utility.Blue ✅.utility-blue-600",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-700",
+      "figmaPath": "Component colors.Utility.Blue ✅.utility-blue-700",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-dark-100",
+      "figmaPath": "Component colors.Utility.Blue dark ✅.utility-blue-dark-100",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-dark-200",
+      "figmaPath": "Component colors.Utility.Blue dark ✅.utility-blue-dark-200",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-dark-300",
+      "figmaPath": "Component colors.Utility.Blue dark ✅.utility-blue-dark-300",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-dark-400",
+      "figmaPath": "Component colors.Utility.Blue dark ✅.utility-blue-dark-400",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-dark-50",
+      "figmaPath": "Component colors.Utility.Blue dark ✅.utility-blue-dark-50",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-dark-500",
+      "figmaPath": "Component colors.Utility.Blue dark ✅.utility-blue-dark-500",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-dark-600",
+      "figmaPath": "Component colors.Utility.Blue dark ✅.utility-blue-dark-600",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-blue-dark-700",
+      "figmaPath": "Component colors.Utility.Blue dark ✅.utility-blue-dark-700",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-gray-blue-100",
+      "figmaPath": "Component colors.Utility.Gray blue ✅.utility-gray-blue-100",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-gray-blue-200",
+      "figmaPath": "Component colors.Utility.Gray blue ✅.utility-gray-blue-200",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-gray-blue-300",
+      "figmaPath": "Component colors.Utility.Gray blue ✅.utility-gray-blue-300",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-gray-blue-400",
+      "figmaPath": "Component colors.Utility.Gray blue ✅.utility-gray-blue-400",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-gray-blue-50",
+      "figmaPath": "Component colors.Utility.Gray blue ✅.utility-gray-blue-50",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-gray-blue-500",
+      "figmaPath": "Component colors.Utility.Gray blue ✅.utility-gray-blue-500",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-gray-blue-600",
+      "figmaPath": "Component colors.Utility.Gray blue ✅.utility-gray-blue-600",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-gray-blue-700",
+      "figmaPath": "Component colors.Utility.Gray blue ✅.utility-gray-blue-700",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-green-100",
+      "figmaPath": "Component colors.Utility.Green ✅.utility-green-100",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-green-200",
+      "figmaPath": "Component colors.Utility.Green ✅.utility-green-200",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-green-300",
+      "figmaPath": "Component colors.Utility.Green ✅.utility-green-300",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-green-400",
+      "figmaPath": "Component colors.Utility.Green ✅.utility-green-400",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-green-50",
+      "figmaPath": "Component colors.Utility.Green ✅.utility-green-50",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-green-500",
+      "figmaPath": "Component colors.Utility.Green ✅.utility-green-500",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-green-600",
+      "figmaPath": "Component colors.Utility.Green ✅.utility-green-600",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-green-700",
+      "figmaPath": "Component colors.Utility.Green ✅.utility-green-700",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-indigo-100",
+      "figmaPath": "Component colors.Utility.Indigo ✅.utility-indigo-100",
+      "rootCauses": ["missing-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-indigo-200",
+      "figmaPath": "Component colors.Utility.Indigo ✅.utility-indigo-200",
+      "rootCauses": ["missing-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-indigo-300",
+      "figmaPath": "Component colors.Utility.Indigo ✅.utility-indigo-300",
+      "rootCauses": ["missing-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-indigo-400",
+      "figmaPath": "Component colors.Utility.Indigo ✅.utility-indigo-400",
+      "rootCauses": ["missing-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-indigo-50",
+      "figmaPath": "Component colors.Utility.Indigo ✅.utility-indigo-50",
+      "rootCauses": ["missing-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-indigo-500",
+      "figmaPath": "Component colors.Utility.Indigo ✅.utility-indigo-500",
+      "rootCauses": ["missing-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-indigo-600",
+      "figmaPath": "Component colors.Utility.Indigo ✅.utility-indigo-600",
+      "rootCauses": ["missing-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-indigo-700",
+      "figmaPath": "Component colors.Utility.Indigo ✅.utility-indigo-700",
+      "rootCauses": ["missing-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-100",
+      "figmaPath": "Component colors.Utility.Orange ✅.utility-orange-100",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-200",
+      "figmaPath": "Component colors.Utility.Orange ✅.utility-orange-200",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-300",
+      "figmaPath": "Component colors.Utility.Orange ✅.utility-orange-300",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-400",
+      "figmaPath": "Component colors.Utility.Orange ✅.utility-orange-400",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-50",
+      "figmaPath": "Component colors.Utility.Orange ✅.utility-orange-50",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-500",
+      "figmaPath": "Component colors.Utility.Orange ✅.utility-orange-500",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-600",
+      "figmaPath": "Component colors.Utility.Orange ✅.utility-orange-600",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-700",
+      "figmaPath": "Component colors.Utility.Orange ✅.utility-orange-700",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-dark-100",
+      "figmaPath": "Component colors.Utility.Orange dark ✅.utility-orange-dark-100",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-dark-200",
+      "figmaPath": "Component colors.Utility.Orange dark ✅.utility-orange-dark-200",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-dark-300",
+      "figmaPath": "Component colors.Utility.Orange dark ✅.utility-orange-dark-300",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-dark-400",
+      "figmaPath": "Component colors.Utility.Orange dark ✅.utility-orange-dark-400",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-dark-50",
+      "figmaPath": "Component colors.Utility.Orange dark ✅.utility-orange-dark-50",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-dark-500",
+      "figmaPath": "Component colors.Utility.Orange dark ✅.utility-orange-dark-500",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-dark-600",
+      "figmaPath": "Component colors.Utility.Orange dark ✅.utility-orange-dark-600",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-orange-dark-700",
+      "figmaPath": "Component colors.Utility.Orange dark ✅.utility-orange-dark-700",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-yellow-100",
+      "figmaPath": "Component colors.Utility.Yellow ✅.utility-yellow-100",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-yellow-200",
+      "figmaPath": "Component colors.Utility.Yellow ✅.utility-yellow-200",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-yellow-300",
+      "figmaPath": "Component colors.Utility.Yellow ✅.utility-yellow-300",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-yellow-400",
+      "figmaPath": "Component colors.Utility.Yellow ✅.utility-yellow-400",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-yellow-50",
+      "figmaPath": "Component colors.Utility.Yellow ✅.utility-yellow-50",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-yellow-500",
+      "figmaPath": "Component colors.Utility.Yellow ✅.utility-yellow-500",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-yellow-600",
+      "figmaPath": "Component colors.Utility.Yellow ✅.utility-yellow-600",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    },
+    {
+      "token": "utility-yellow-700",
+      "figmaPath": "Component colors.Utility.Yellow ✅.utility-yellow-700",
+      "rootCauses": ["deprecated-primitive"],
+      "failedModes": ["dark", "light"]
+    }
+  ],
+  "unresolvedAliases": [
+    {
+      "semanticToken": "bg-creative-blue",
+      "reference": "Component colors.Utility.Blue ✅.utility-blue-600",
+      "mode": "dark",
+      "rootCause": "upstream-alias-unresolved"
+    },
+    {
+      "semanticToken": "bg-creative-blue",
+      "reference": "Component colors.Utility.Blue ✅.utility-blue-50",
+      "mode": "light",
+      "rootCause": "upstream-alias-unresolved"
+    },
+    {
+      "semanticToken": "bg-creative-green",
+      "reference": "Component colors.Utility.Green ✅.utility-green-600",
+      "mode": "dark",
+      "rootCause": "upstream-alias-unresolved"
+    },
+    {
+      "semanticToken": "bg-creative-green",
+      "reference": "Component colors.Utility.Green ✅.utility-green-50",
+      "mode": "light",
+      "rootCause": "upstream-alias-unresolved"
+    },
+    {
+      "semanticToken": "bg-creative-orange",
+      "reference": "Component colors.Utility.Orange dark ✅.utility-orange-dark-600",
+      "mode": "dark",
+      "rootCause": "upstream-alias-unresolved"
+    },
+    {
+      "semanticToken": "bg-creative-orange",
+      "reference": "Component colors.Utility.Orange ✅.utility-orange-50",
+      "mode": "light",
+      "rootCause": "upstream-alias-unresolved"
+    },
+    {
+      "semanticToken": "bg-creative-red",
+      "reference": "Colors/red❌/600",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "bg-creative-red",
+      "reference": "Colors/red❌/50",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "bg-creative-yellow",
+      "reference": "Component colors.Utility.Yellow ✅.utility-yellow-600",
+      "mode": "dark",
+      "rootCause": "upstream-alias-unresolved"
+    },
+    {
+      "semanticToken": "bg-creative-yellow",
+      "reference": "Component colors.Utility.Yellow ✅.utility-yellow-50",
+      "mode": "light",
+      "rootCause": "upstream-alias-unresolved"
+    },
+    {
+      "semanticToken": "text-creative-blue",
+      "reference": "Colors/blue❌/300",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "text-creative-green",
+      "reference": "Colors/Green ✅/300",
+      "mode": "dark",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "text-creative-orange",
+      "reference": "Colors/orange-dark❌/300",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "text-creative-orange",
+      "reference": "Colors/orange❌/600",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "text-creative-red",
+      "reference": "Colors/red❌/300",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "text-creative-red",
+      "reference": "Colors/red❌/600",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "text-creative-yellow",
+      "reference": "Colors/yellow❌/300",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "text-yellow-secondary",
+      "reference": "Colors/yellow❌/300",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-100",
+      "reference": "Colors/blue❌/900",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-100",
+      "reference": "Colors/blue❌/100",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-200",
+      "reference": "Colors/blue❌/800",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-200",
+      "reference": "Colors/blue❌/200",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-300",
+      "reference": "Colors/blue❌/700",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-300",
+      "reference": "Colors/blue❌/300",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-400",
+      "reference": "Colors/blue❌/600",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-400",
+      "reference": "Colors/blue❌/400",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-50",
+      "reference": "Colors/blue❌/950",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-50",
+      "reference": "Colors/blue❌/50",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-500",
+      "reference": "Colors/blue❌/500",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-500",
+      "reference": "Colors/blue❌/500",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-600",
+      "reference": "Colors/blue❌/400",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-600",
+      "reference": "Colors/blue❌/600",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-700",
+      "reference": "Colors/blue❌/300",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-700",
+      "reference": "Colors/blue❌/700",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-100",
+      "reference": "Colors/blue dark❌/900",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-100",
+      "reference": "Colors/blue dark❌/100",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-200",
+      "reference": "Colors/blue dark❌/800",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-200",
+      "reference": "Colors/blue dark❌/200",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-300",
+      "reference": "Colors/blue dark❌/700",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-300",
+      "reference": "Colors/blue dark❌/300",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-400",
+      "reference": "Colors/blue dark❌/600",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-400",
+      "reference": "Colors/blue dark❌/400",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-50",
+      "reference": "Colors/blue dark❌/950",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-50",
+      "reference": "Colors/blue dark❌/50",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-500",
+      "reference": "Colors/blue dark❌/500",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-500",
+      "reference": "Colors/blue dark❌/500",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-600",
+      "reference": "Colors/blue dark❌/400",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-600",
+      "reference": "Colors/blue dark❌/600",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-700",
+      "reference": "Colors/blue dark❌/300",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-blue-dark-700",
+      "reference": "Colors/blue dark❌/700",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-100",
+      "reference": "Colors/grayblue❌/900",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-100",
+      "reference": "Colors/grayblue❌/100",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-200",
+      "reference": "Colors/grayblue❌/800",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-200",
+      "reference": "Colors/grayblue❌/200",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-300",
+      "reference": "Colors/grayblue❌/700",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-300",
+      "reference": "Colors/grayblue❌/300",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-400",
+      "reference": "Colors/grayblue❌/600",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-400",
+      "reference": "Colors/grayblue❌/400",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-50",
+      "reference": "Colors/grayblue❌/950",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-50",
+      "reference": "Colors/grayblue❌/50",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-500",
+      "reference": "Colors/grayblue❌/500",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-500",
+      "reference": "Colors/grayblue❌/500",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-600",
+      "reference": "Colors/grayblue❌/400",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-600",
+      "reference": "Colors/grayblue❌/600",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-700",
+      "reference": "Colors/grayblue❌/300",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-gray-blue-700",
+      "reference": "Colors/grayblue❌/700",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-100",
+      "reference": "Colors/green❌/900",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-100",
+      "reference": "Colors/green❌/100",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-200",
+      "reference": "Colors/green❌/800",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-200",
+      "reference": "Colors/green❌/200",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-300",
+      "reference": "Colors/green❌/700",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-300",
+      "reference": "Colors/green❌/300",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-400",
+      "reference": "Colors/green❌/600",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-400",
+      "reference": "Colors/green❌/400",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-50",
+      "reference": "Colors/green❌/950",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-50",
+      "reference": "Colors/green❌/50",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-500",
+      "reference": "Colors/green❌/500",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-500",
+      "reference": "Colors/green❌/500",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-600",
+      "reference": "Colors/green❌/400",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-600",
+      "reference": "Colors/green❌/600",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-700",
+      "reference": "Colors/green❌/300",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-green-700",
+      "reference": "Colors/green❌/700",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-100",
+      "reference": "Colors/Indigo ✅/900",
+      "mode": "dark",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-100",
+      "reference": "Colors/Indigo ✅/100",
+      "mode": "light",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-200",
+      "reference": "Colors/Indigo ✅/800",
+      "mode": "dark",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-200",
+      "reference": "Colors/Indigo ✅/200",
+      "mode": "light",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-300",
+      "reference": "Colors/Indigo ✅/700",
+      "mode": "dark",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-300",
+      "reference": "Colors/Indigo ✅/300",
+      "mode": "light",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-400",
+      "reference": "Colors/Indigo ✅/600",
+      "mode": "dark",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-400",
+      "reference": "Colors/Indigo ✅/400",
+      "mode": "light",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-50",
+      "reference": "Colors/Indigo ✅/950",
+      "mode": "dark",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-50",
+      "reference": "Colors/Indigo ✅/50",
+      "mode": "light",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-500",
+      "reference": "Colors/Indigo ✅/500",
+      "mode": "dark",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-500",
+      "reference": "Colors/Indigo ✅/500",
+      "mode": "light",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-600",
+      "reference": "Colors/Indigo ✅/400",
+      "mode": "dark",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-600",
+      "reference": "Colors/Indigo ✅/600",
+      "mode": "light",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-700",
+      "reference": "Colors/Indigo ✅/300",
+      "mode": "dark",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-indigo-700",
+      "reference": "Colors/Indigo ✅/700",
+      "mode": "light",
+      "rootCause": "missing-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-100",
+      "reference": "Colors/orange❌/900",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-100",
+      "reference": "Colors/orange❌/100",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-200",
+      "reference": "Colors/orange❌/800",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-200",
+      "reference": "Colors/orange❌/200",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-300",
+      "reference": "Colors/orange❌/700",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-300",
+      "reference": "Colors/orange❌/300",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-400",
+      "reference": "Colors/orange❌/600",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-400",
+      "reference": "Colors/orange❌/400",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-50",
+      "reference": "Colors/orange❌/950",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-50",
+      "reference": "Colors/orange❌/50",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-500",
+      "reference": "Colors/orange❌/500",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-500",
+      "reference": "Colors/orange❌/500",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-600",
+      "reference": "Colors/orange❌/400",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-600",
+      "reference": "Colors/orange❌/600",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-700",
+      "reference": "Colors/orange❌/300",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-700",
+      "reference": "Colors/orange❌/700",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-100",
+      "reference": "Colors/orange-dark❌/900",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-100",
+      "reference": "Colors/orange-dark❌/100",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-200",
+      "reference": "Colors/orange-dark❌/800",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-200",
+      "reference": "Colors/orange-dark❌/200",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-300",
+      "reference": "Colors/orange-dark❌/700",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-300",
+      "reference": "Colors/orange-dark❌/300",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-400",
+      "reference": "Colors/orange-dark❌/600",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-400",
+      "reference": "Colors/orange-dark❌/400",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-50",
+      "reference": "Colors/orange-dark❌/950",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-50",
+      "reference": "Colors/orange-dark❌/50",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-500",
+      "reference": "Colors/orange-dark❌/500",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-500",
+      "reference": "Colors/orange-dark❌/500",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-600",
+      "reference": "Colors/orange-dark❌/400",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-600",
+      "reference": "Colors/orange-dark❌/600",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-700",
+      "reference": "Colors/orange-dark❌/300",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-orange-dark-700",
+      "reference": "Colors/orange-dark❌/700",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-100",
+      "reference": "Colors/yellow❌/900",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-100",
+      "reference": "Colors/yellow❌/100",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-200",
+      "reference": "Colors/yellow❌/800",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-200",
+      "reference": "Colors/yellow❌/200",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-300",
+      "reference": "Colors/yellow❌/700",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-300",
+      "reference": "Colors/yellow❌/300",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-400",
+      "reference": "Colors/yellow❌/600",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-400",
+      "reference": "Colors/yellow❌/400",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-50",
+      "reference": "Colors/yellow❌/950",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-50",
+      "reference": "Colors/yellow❌/50",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-500",
+      "reference": "Colors/yellow❌/500",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-500",
+      "reference": "Colors/yellow❌/500",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-600",
+      "reference": "Colors/yellow❌/400",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-600",
+      "reference": "Colors/yellow❌/600",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-700",
+      "reference": "Colors/yellow❌/300",
+      "mode": "dark",
+      "rootCause": "deprecated-primitive"
+    },
+    {
+      "semanticToken": "utility-yellow-700",
+      "reference": "Colors/yellow❌/700",
+      "mode": "light",
+      "rootCause": "deprecated-primitive"
+    }
+  ]
+}

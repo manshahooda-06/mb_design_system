@@ -1,0 +1,55 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Textarea > markup > matches the snapshot for a fully configured field 1`] = `
+<div
+  class="isolate flex w-full flex-col items-start gap-semantic-sm font-sans"
+>
+  <div
+    class="relative z-2 flex w-full flex-col items-start gap-semantic-sm"
+  >
+    <div
+      class="flex items-center gap-semantic-xxs"
+    >
+      <label
+        class="font-medium text-semantic-text-primary text-desktop-caption-md"
+        for="_r_15_"
+      >
+        Description
+      </label>
+      <span
+        aria-hidden="true"
+        class="text-mobile-body-md font-medium text-semantic-text-error-secondary"
+      >
+        *
+      </span>
+    </div>
+    <div
+      class="flex w-full items-start gap-semantic-md overflow-clip bg-semantic-bg-primary inset-ring inset-ring-semantic-border-primary shadow-elevation-1 transition focus-within:inset-ring-2 focus-within:inset-ring-semantic-border-brand-alt h-[132px] px-[14px] py-semantic-lg rounded-md"
+    >
+      <textarea
+        aria-describedby="_r_15_-hint"
+        aria-required="true"
+        class="h-full min-w-px flex-1 bg-transparent font-normal text-semantic-text-primary resize-none outline-none placeholder:font-light placeholder:text-semantic-text-secondary disabled:cursor-not-allowed disabled:text-semantic-text-tertiary text-desktop-body-sm placeholder:text-desktop-caption-md"
+        id="_r_15_"
+        placeholder="Enter a description..."
+      />
+    </div>
+  </div>
+  <div
+    class="relative z-1 flex w-full items-center gap-semantic-xs"
+  >
+    <span
+      aria-hidden="true"
+      class="inline-flex shrink-0 items-center justify-center *:size-full size-semantic-2xl"
+    >
+      <svg />
+    </span>
+    <p
+      class="font-normal text-desktop-caption-md text-semantic-text-quaternary"
+      id="_r_15_-hint"
+    >
+      This is a hint text to help user.
+    </p>
+  </div>
+</div>
+`;

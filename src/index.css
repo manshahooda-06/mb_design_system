@@ -1,0 +1,18 @@
+/*
+ * Mozaic stylesheet entry point — the standalone build, `dist/styles.css`.
+ *
+ * Theme, **preflight** and utilities. Use this when Mozaic is the page's only styling
+ * layer: Storybook, a docs site, an app with no CSS framework of its own.
+ *
+ * Embedding into an app that already has a reset? Use `dist/embed.css` instead, which is
+ * the same stylesheet without the preflight. Loading this one there would apply a second
+ * global reset and repoint the host's `html { font-family }` at Lexend Deca.
+ *
+ * `source(none)` disables Tailwind's automatic content detection, which would otherwise
+ * scan markdown and test files and harvest class-like strings from prose into the published
+ * stylesheet. Utilities in the shipped CSS must come only from shipped components, so
+ * sources are declared explicitly in `mozaic.css`.
+ */
+@import 'tailwindcss' source(none);
+
+@import './mozaic.css';

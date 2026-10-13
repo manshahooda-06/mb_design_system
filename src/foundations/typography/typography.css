@@ -1,0 +1,114 @@
+/*
+ * Typography tokens.
+ *
+ * GENERATED FROM FIGMA — DO NOT EDIT BY HAND.
+ * Run `pnpm generate:typography-tokens` after re-exporting. See
+ * docs/Foundations.md for the full reference and rationale.
+ *
+ * Sizes and line heights are the Figma px values divided by 16, so type
+ * respects the reader's browser font-size setting. Weight names are mapped to
+ * their standard CSS numeric equivalents.
+ *
+ * `static` forces every token into the output; without it Tailwind tree-shakes
+ * theme variables its own utilities do not reference.
+ */
+
+@theme static {
+  /* font family */
+  --font-body: 'Lexend Deca';
+  --font-display: 'Lexend Deca';
+
+  /* font weight */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* mobile — font size and line height */
+  --text-mobile-caption-sm: 0.5rem;
+  --text-mobile-caption-sm--line-height: 0.75rem;
+  --text-mobile-caption-md: 0.625rem;
+  --text-mobile-caption-md--line-height: 1rem;
+  --text-mobile-body-sm: 0.75rem;
+  --text-mobile-body-sm--line-height: 1.25rem;
+  --text-mobile-body-md: 0.875rem;
+  --text-mobile-body-md--line-height: 1.25rem;
+  --text-mobile-body-lg: 1rem;
+  --text-mobile-body-lg--line-height: 1.5rem;
+  --text-mobile-heading-sm: 1rem;
+  --text-mobile-heading-sm--line-height: 1.5rem;
+  --text-mobile-heading-md: 1.25rem;
+  --text-mobile-heading-md--line-height: 2rem;
+  --text-mobile-heading-lg: 1.5rem;
+  --text-mobile-heading-lg--line-height: 2.25rem;
+  --text-mobile-display-xs: 1.5rem;
+  --text-mobile-display-xs--line-height: 2.25rem;
+  --text-mobile-display-sm: 1.75rem;
+  --text-mobile-display-sm--line-height: 2.5rem;
+  --text-mobile-display-md: 2rem;
+  --text-mobile-display-md--line-height: 3rem;
+  --text-mobile-display-lg: 2.5rem;
+  --text-mobile-display-lg--line-height: 3.25rem;
+  --text-mobile-banner-headline-sm: 0.75rem;
+  --text-mobile-banner-headline-sm--line-height: 1rem;
+  --text-mobile-banner-headline-md: 0.875rem;
+  --text-mobile-banner-headline-md--line-height: 1.125rem;
+  --text-mobile-banner-headline-lg: 1rem;
+  --text-mobile-banner-headline-lg--line-height: 1.25rem;
+  --text-mobile-banner-body-md: 0.625rem;
+  --text-mobile-banner-body-md--line-height: 1rem;
+  --text-mobile-banner-body-lg: 0.75rem;
+  --text-mobile-banner-body-lg--line-height: 1.125rem;
+  --text-mobile-banner-label-md: 0.625rem;
+  --text-mobile-banner-label-md--line-height: 0.875rem;
+  --text-mobile-banner-label-lg: 0.75rem;
+  --text-mobile-banner-label-lg--line-height: 1rem;
+  --text-mobile-banner-cta-md: 0.625rem;
+  --text-mobile-banner-cta-md--line-height: 0.875rem;
+  --text-mobile-banner-cta-lg: 0.75rem;
+  --text-mobile-banner-cta-lg--line-height: 1rem;
+
+  /* desktop — font size and line height */
+  --text-desktop-caption-sm: 0.75rem;
+  --text-desktop-caption-sm--line-height: 1rem;
+  --text-desktop-caption-md: 0.875rem;
+  --text-desktop-caption-md--line-height: 1.25rem;
+  --text-desktop-body-sm: 1rem;
+  --text-desktop-body-sm--line-height: 1.5rem;
+  --text-desktop-body-md: 1.25rem;
+  --text-desktop-body-md--line-height: 1.75rem;
+  --text-desktop-heading-sm: 1.5rem;
+  --text-desktop-heading-sm--line-height: 2.25rem;
+  --text-desktop-heading-md: 1.75rem;
+  --text-desktop-heading-md--line-height: 2.5rem;
+  --text-desktop-heading-lg: 2rem;
+  --text-desktop-heading-lg--line-height: 3rem;
+  --text-desktop-display-xs: 2rem;
+  --text-desktop-display-xs--line-height: 3rem;
+  --text-desktop-display-sm: 2.5rem;
+  --text-desktop-display-sm--line-height: 3.25rem;
+  --text-desktop-display-md: 3rem;
+  --text-desktop-display-md--line-height: 3.75rem;
+  --text-desktop-display-lg: 3.75rem;
+  --text-desktop-display-lg--line-height: 4.5rem;
+  --text-desktop-banner-headline-sm: 1.5rem;
+  --text-desktop-banner-headline-sm--line-height: 2rem;
+  --text-desktop-banner-headline-md: 1.75rem;
+  --text-desktop-banner-headline-md--line-height: 2.25rem;
+  --text-desktop-banner-headline-lg: 2rem;
+  --text-desktop-banner-headline-lg--line-height: 3rem;
+  --text-desktop-banner-body-md: 1.25rem;
+  --text-desktop-banner-body-md--line-height: 2rem;
+  --text-desktop-banner-body-lg: 1.5rem;
+  --text-desktop-banner-body-lg--line-height: 2.25rem;
+  --text-desktop-banner-label-md: 1.25rem;
+  --text-desktop-banner-label-md--line-height: 1.5rem;
+  --text-desktop-banner-label-lg: 1.5rem;
+  --text-desktop-banner-label-lg--line-height: 1.75rem;
+  --text-desktop-banner-cta-md: 1.25rem;
+  --text-desktop-banner-cta-md--line-height: 1.5rem;
+  --text-desktop-banner-cta-lg: 1.5rem;
+  --text-desktop-banner-cta-lg--line-height: 1.75rem;
+}

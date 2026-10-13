@@ -1,0 +1,67 @@
+{
+  "$transcription": {
+    "reason": "Figma effect styles are not variables, so they cannot be produced by the variable export that every other file in this directory comes from. These 8 styles were read from Dev Mode and transcribed by hand.",
+    "figmaNode": "4823:505",
+    "figmaFile": "WDvKDL3qSNft5k9Hj6HqNl",
+    "figmaSection": "Section > Shadows",
+    "layerOrder": "Layers are stored in CSS paint order — front first. Figma's effect list is the reverse: it shows the widest layer first. Both orderings were cross-checked against the box-shadow Figma's own codegen emits for all 8 styles.",
+    "colour": "Every layer is pure black with an alpha, stored as the 8-digit hex Figma reports. Figma's codegen rounds these (0A becomes 0.04); the hex is authoritative.",
+    "notExported": "x offset and spread are 0 on all 16 layers. No dark mode exists for these styles."
+  },
+  "shadow-elevation-1": {
+    "$type": "shadow",
+    "$value": [
+      { "color": "#00000005", "offsetX": "0px", "offsetY": "1px", "blur": "1px", "spread": "0px" },
+      { "color": "#0000000a", "offsetX": "0px", "offsetY": "2px", "blur": "4px", "spread": "0px" }
+    ]
+  },
+  "shadow-elevation-2": {
+    "$type": "shadow",
+    "$value": [
+      { "color": "#0000000a", "offsetX": "0px", "offsetY": "1px", "blur": "4px", "spread": "0px" },
+      { "color": "#0000000d", "offsetX": "0px", "offsetY": "4px", "blur": "10px", "spread": "0px" }
+    ]
+  },
+  "shadow-elevation-3": {
+    "$type": "shadow",
+    "$value": [
+      { "color": "#0000000a", "offsetX": "0px", "offsetY": "2px", "blur": "20px", "spread": "0px" },
+      { "color": "#00000014", "offsetX": "0px", "offsetY": "8px", "blur": "32px", "spread": "0px" }
+    ]
+  },
+  "shadow-elevation-4": {
+    "$type": "shadow",
+    "$value": [
+      { "color": "#0000000f", "offsetX": "0px", "offsetY": "8px", "blur": "20px", "spread": "0px" },
+      { "color": "#0000001f", "offsetX": "0px", "offsetY": "24px", "blur": "60px", "spread": "0px" }
+    ]
+  },
+  "shadow-elevation-1-up": {
+    "$type": "shadow",
+    "$value": [
+      { "color": "#00000003", "offsetX": "0px", "offsetY": "-1px", "blur": "1px", "spread": "0px" },
+      { "color": "#00000008", "offsetX": "0px", "offsetY": "-2px", "blur": "4px", "spread": "0px" }
+    ]
+  },
+  "shadow-elevation-2-up": {
+    "$type": "shadow",
+    "$value": [
+      { "color": "#00000008", "offsetX": "0px", "offsetY": "-1px", "blur": "4px", "spread": "0px" },
+      { "color": "#0000000a", "offsetX": "0px", "offsetY": "-4px", "blur": "10px", "spread": "0px" }
+    ]
+  },
+  "shadow-elevation-3-up": {
+    "$type": "shadow",
+    "$value": [
+      { "color": "#00000008", "offsetX": "0px", "offsetY": "-2px", "blur": "20px", "spread": "0px" },
+      { "color": "#00000012", "offsetX": "0px", "offsetY": "-8px", "blur": "32px", "spread": "0px" }
+    ]
+  },
+  "shadow-elevation-4-up": {
+    "$type": "shadow",
+    "$value": [
+      { "color": "#0000000d", "offsetX": "0px", "offsetY": "-8px", "blur": "20px", "spread": "0px" },
+      { "color": "#0000001a", "offsetX": "0px", "offsetY": "-24px", "blur": "60px", "spread": "0px" }
+    ]
+  }
+}

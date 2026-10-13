@@ -1,0 +1,34 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tag > matches its rendered markup 1`] = `
+<span
+  class="inline-flex items-center justify-center rounded-sm font-sans bg-semantic-bg-primary inset-ring inset-ring-semantic-border-primary py-semantic-xxs gap-[3px] pl-[5px] pr-semantic-xs"
+>
+  <span
+    class="flex items-center gap-[5px]"
+  >
+    <span
+      class="inline-flex shrink-0 items-center justify-center size-semantic-xl overflow-clip rounded-full *:size-full"
+    >
+      <svg />
+    </span>
+    <span
+      class="shrink-0 text-center font-medium whitespace-nowrap text-semantic-text-secondary text-mobile-body-md"
+    >
+      Olivia
+    </span>
+  </span>
+  <button
+    aria-label="Remove"
+    class="inline-flex shrink-0 cursor-pointer items-center justify-center p-semantic-xxs text-semantic-fg-quinary outline-none focus-visible:ring-2 focus-visible:ring-semantic-focus-ring focus-visible:ring-offset-2 focus-visible:ring-offset-semantic-bg-primary disabled:cursor-not-allowed"
+    type="button"
+  >
+    <span
+      aria-hidden="true"
+      class="size-[10px] shrink-0 *:size-full"
+    >
+      <svg />
+    </span>
+  </button>
+</span>
+`;

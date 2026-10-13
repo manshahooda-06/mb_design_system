@@ -1,0 +1,33 @@
+/*
+ * Elevation tokens.
+ *
+ * GENERATED FROM FIGMA — DO NOT EDIT BY HAND.
+ * Run `pnpm generate:elevation-tokens` after re-exporting. See
+ * docs/Foundations.md for the full reference.
+ *
+ * Each token is a two-layer drop shadow, in CSS paint order — front first.
+ * Figma's effect panel lists them the other way round.
+ *
+ * Values stay in pixels. Shadow geometry is absolute in Figma, and a shadow
+ * that rescaled with the root font size would change how high the surface
+ * looks — the one thing an elevation scale exists to hold fixed.
+ *
+ * Colours are pure black with an alpha, carried as the 8-digit hex Figma
+ * reports. They are deliberately not aliased to the semantic shadow colours:
+ * all 21 of those are rgb(23 27 34 / a), a different scale, so pointing at
+ * one would change the colour. See docs/Foundations.md.
+ *
+ * `static` forces every token into the output; without it Tailwind tree-shakes
+ * theme variables its own utilities do not reference.
+ */
+
+@theme static {
+  --shadow-elevation-1: 0px 1px 1px 0px #00000005, 0px 2px 4px 0px #0000000a; /* 2 layers */
+  --shadow-elevation-2: 0px 1px 4px 0px #0000000a, 0px 4px 10px 0px #0000000d; /* 2 layers */
+  --shadow-elevation-3: 0px 2px 20px 0px #0000000a, 0px 8px 32px 0px #00000014; /* 2 layers */
+  --shadow-elevation-4: 0px 8px 20px 0px #0000000f, 0px 24px 60px 0px #0000001f; /* 2 layers */
+  --shadow-elevation-1-up: 0px -1px 1px 0px #00000003, 0px -2px 4px 0px #00000008; /* 2 layers */
+  --shadow-elevation-2-up: 0px -1px 4px 0px #00000008, 0px -4px 10px 0px #0000000a; /* 2 layers */
+  --shadow-elevation-3-up: 0px -2px 20px 0px #00000008, 0px -8px 32px 0px #00000012; /* 2 layers */
+  --shadow-elevation-4-up: 0px -8px 20px 0px #0000000d, 0px -24px 60px 0px #0000001a; /* 2 layers */
+}

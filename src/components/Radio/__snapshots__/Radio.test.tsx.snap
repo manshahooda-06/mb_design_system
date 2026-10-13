@@ -1,0 +1,45 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Radio > matches its rendered markup 1`] = `
+<div
+  class="flex w-full items-start font-sans gap-semantic-lg"
+>
+  <label
+    class="inline-flex shrink-0 pt-semantic-xxs"
+  >
+    <input
+      aria-describedby="_r_3p_-supporting"
+      checked=""
+      class="peer sr-only disabled:cursor-not-allowed"
+      id="plan-pro"
+      name="plan"
+      type="radio"
+      value="pro"
+    />
+    <span
+      aria-hidden="true"
+      class="pointer-events-none inline-flex shrink-0 items-center justify-center rounded-full overflow-clip transition peer-focus-visible:ring-2 peer-focus-visible:ring-semantic-focus-ring peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-semantic-bg-primary size-semantic-2xl border-0 bg-semantic-bg-brand-solid text-semantic-fg-white"
+    >
+      <span
+        class="pointer-events-none rounded-full bg-current size-semantic-md"
+      />
+    </span>
+  </label>
+  <span
+    class="flex min-w-semantic-none flex-1 flex-col items-start gap-semantic-xxs"
+  >
+    <label
+      class="cursor-pointer font-medium break-words text-semantic-text-primary text-desktop-body-sm"
+      for="plan-pro"
+    >
+      Pro
+    </label>
+    <span
+      class="font-regular break-words text-semantic-text-secondary text-desktop-body-sm"
+      id="_r_3p_-supporting"
+    >
+      Everything in Free, plus more.
+    </span>
+  </span>
+</div>
+`;

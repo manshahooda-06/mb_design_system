@@ -1,0 +1,10 @@
+/*
+ * Semantic token layer.
+ *
+ * Imported after foundations/ so the primitives every semantic token aliases
+ * are already declared. CSS custom properties resolve lazily, so order is not
+ * strictly required — but reading order should match the dependency direction.
+ */
+@import './colors/colors.css';
+@import './spacing/spacing.css';
+@import './container/container.css';

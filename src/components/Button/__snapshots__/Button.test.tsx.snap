@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button > markup > matches the snapshot for a fully configured button 1`] = `
+<button
+  class="inline-flex items-center justify-center overflow-clip shadow-elevation-1 transition-colors cursor-pointer disabled:cursor-not-allowed aria-disabled:cursor-not-allowed font-sans font-semibold whitespace-nowrap gap-semantic-md px-semantic-xl py-semantic-md rounded-md text-desktop-body-sm w-full outline-none focus-visible:ring-2 focus-visible:ring-semantic-focus-ring focus-visible:ring-offset-2 focus-visible:ring-offset-semantic-bg-primary disabled:bg-semantic-bg-disabled disabled:text-semantic-fg-disabled disabled:inset-ring-semantic-border-disabled aria-disabled:bg-semantic-bg-disabled aria-disabled:text-semantic-fg-disabled aria-disabled:inset-ring-semantic-border-disabled bg-semantic-button-secondary-color-bg text-semantic-button-secondary-color-fg inset-ring inset-ring-semantic-button-secondary-color-border hover:bg-semantic-button-secondary-color-bg-hover hover:text-semantic-button-secondary-color-fg-hover hover:inset-ring-semantic-button-secondary-color-border-hover"
+  type="button"
+>
+  <span
+    aria-hidden="true"
+    class="inline-flex shrink-0 items-center justify-center *:size-full size-semantic-2xl"
+  >
+    <svg
+      data-testid="icon"
+    />
+  </span>
+  <span
+    class="inline-flex items-center justify-center py-semantic-xxs"
+  >
+    Continue
+  </span>
+</button>
+`;

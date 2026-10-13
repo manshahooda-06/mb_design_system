@@ -1,0 +1,61 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Input > markup > matches the snapshot for a fully configured field 1`] = `
+<div
+  class="flex w-full flex-col gap-semantic-xs font-sans"
+>
+  <div
+    class="flex w-full flex-col gap-semantic-sm"
+  >
+    <div
+      class="flex items-start gap-semantic-xxs"
+    >
+      <label
+        class="font-medium text-semantic-text-primary text-desktop-caption-md"
+        for="_r_14_"
+      >
+        Email
+      </label>
+      <span
+        aria-hidden="true"
+        class="text-mobile-body-md font-medium text-semantic-text-error-secondary"
+      >
+        *
+      </span>
+    </div>
+    <div
+      class="flex w-full items-center bg-semantic-bg-primary inset-ring inset-ring-semantic-border-primary shadow-elevation-1 transition focus-within:inset-ring-2 focus-within:inset-ring-semantic-border-brand-alt focus-within:overflow-clip h-[56px] px-semantic-lg py-semantic-xl gap-semantic-lg rounded-xl"
+    >
+      <div
+        class="flex min-w-px flex-1 items-center gap-semantic-md"
+      >
+        <span
+          aria-hidden="true"
+          class="inline-flex size-semantic-2xl shrink-0 items-center justify-center *:size-full"
+        >
+          <svg />
+        </span>
+        <input
+          aria-describedby="_r_14_-hint"
+          aria-required="true"
+          class="min-w-px flex-1 bg-transparent font-normal text-semantic-text-primary truncate outline-none placeholder:font-light placeholder:text-semantic-text-secondary disabled:cursor-not-allowed disabled:text-semantic-text-tertiary text-desktop-body-sm placeholder:text-desktop-caption-md"
+          id="_r_14_"
+          placeholder="olivia@untitledui.com"
+        />
+      </div>
+      <span
+        aria-hidden="true"
+        class="inline-flex size-semantic-xl shrink-0 items-center justify-center *:size-full"
+      >
+        <svg />
+      </span>
+    </div>
+  </div>
+  <p
+    class="w-full font-normal text-desktop-caption-md text-semantic-text-quaternary"
+    id="_r_14_-hint"
+  >
+    This is a hint text to help user.
+  </p>
+</div>
+`;

@@ -1,0 +1,43 @@
+/*
+ * Mozaic stylesheet for embedding — `dist/embed.css`.
+ *
+ * The same tokens and utilities as `styles.css` with **Tailwind's preflight left out**, for
+ * apps that already have a reset of their own. The MediBuddy frontend repository is exactly
+ * that case: it runs its own Tailwind, so importing the standalone stylesheet there would
+ * apply a second global reset on top of its first.
+ *
+ * The preflight is not a detail worth omitting for size — it rewrites the **host page**.
+ * It sets `html { font-family: var(--default-font-family); line-height: 1.5 }`, which this
+ * package points at Lexend Deca, plus `-webkit-text-size-adjust`, `tab-size` and a
+ * `*, ::before, ::after` reset. A component library has no business changing any of that
+ * in an application that did not ask for it.
+ *
+ * What is kept is what the components actually need:
+ *
+ *   theme      — the token custom properties every utility resolves against
+ *   properties — the `@property --tw-*` registrations `inset-ring`, `ring` and the shadow
+ *                slots depend on; without them those utilities silently paint nothing
+ *   utilities  — the compiled classes themselves
+ *
+ * Because the utilities are compiled here, the host app's own Tailwind never has to resolve
+ * a Mozaic class name — which is why a Tailwind v3 app can consume a v4-built package.
+ */
+/*
+ * **Emitted unlayered, and that is the whole point.**
+ *
+ * `styles.css` puts its utilities in `@layer utilities`, which is right when Mozaic owns
+ * the page. Here it would lose: Tailwind v3 emits its preflight as plain, *unlayered*
+ * rules, and in the CSS cascade unlayered author declarations beat every layered one no
+ * matter which stylesheet is imported first. Wrapping these in `layer(utilities)` therefore
+ * hands `input { font-size: 100%; font-family: inherit }` a win over
+ * `text-mobile-body-md`, and the field renders in the host's default serif at 16px instead
+ * of Lexend Deca at Figma's 14/20 — measured, not theorised.
+ *
+ * Unlayered, the contest is specificity instead, and a class (0,1,0) beats an element
+ * selector (0,0,1). Against the host's own utilities it is source order, which is the
+ * normal rule for two unlayered stylesheets and is the consumer's to control.
+ */
+@import 'tailwindcss/theme.css';
+@import 'tailwindcss/utilities.css' source(none);
+
+@import './mozaic.css';

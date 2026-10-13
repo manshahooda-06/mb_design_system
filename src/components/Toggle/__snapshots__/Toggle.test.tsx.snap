@@ -1,0 +1,36 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Toggle > matches its rendered markup 1`] = `
+<div
+  class="flex w-full items-start font-sans gap-semantic-lg"
+>
+  <button
+    aria-checked="true"
+    aria-describedby="_r_53_-supporting"
+    aria-labelledby="_r_53_-label"
+    class="group/toggle box-content inline-flex shrink-0 items-center rounded-full overflow-clip cursor-pointer disabled:cursor-not-allowed transition outline-none focus-visible:ring-2 focus-visible:ring-semantic-focus-ring focus-visible:ring-offset-2 focus-visible:ring-offset-semantic-bg-primary h-semantic-2xl w-semantic-5xl p-semantic-none inset-ring bg-semantic-bg-brand-solid hover:bg-semantic-bg-brand-solid-hover inset-ring-transparent"
+    role="switch"
+    type="button"
+  >
+    <span
+      class="pointer-events-none block shrink-0 rounded-full bg-semantic-bg-primary shadow-elevation-1 transition size-semantic-2xl inset-ring translate-x-full inset-ring-semantic-toggle-slim-border-pressed group-hover/toggle:inset-ring-semantic-toggle-slim-border-pressed-hover"
+    />
+  </button>
+  <span
+    class="flex min-w-semantic-none flex-1 flex-col items-start gap-semantic-xxs"
+  >
+    <span
+      class="font-medium break-words text-semantic-text-primary text-desktop-body-sm"
+      id="_r_53_-label"
+    >
+      Remember me
+    </span>
+    <span
+      class="font-regular break-words text-semantic-text-secondary text-desktop-body-sm"
+      id="_r_53_-supporting"
+    >
+      Save my login details for next time.
+    </span>
+  </span>
+</div>
+`;

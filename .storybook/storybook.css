@@ -1,0 +1,10 @@
+/*
+ * Storybook-only stylesheet.
+ *
+ * src/index.css sets `source(none)` so the published stylesheet only ever
+ * contains utilities used by shipped components. Documentation pages still
+ * need their own utilities, so story files are registered as a Tailwind source
+ * here — in the Storybook build only, never in the published package.
+ */
+@import '../src/index.css';
+@source '../src/**/*.stories.tsx';

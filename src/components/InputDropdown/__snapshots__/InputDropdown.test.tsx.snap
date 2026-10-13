@@ -1,0 +1,165 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`InputDropdown > matches its rendered markup 1`] = `
+<div
+  class="flex w-full flex-col items-start font-sans gap-semantic-md"
+>
+  <div
+    class="flex w-full flex-col items-start gap-semantic-sm"
+  >
+    <div
+      class="flex items-center gap-semantic-xxs"
+    >
+      <span
+        class="font-medium text-semantic-text-primary text-desktop-caption-md"
+        id="_r_2t_-label"
+      >
+        Placeholder text
+      </span>
+    </div>
+    <button
+      aria-describedby="_r_2t_-hint"
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      aria-labelledby="_r_2t_-label"
+      class="flex w-full items-center overflow-clip rounded-md bg-semantic-bg-primary inset-ring inset-ring-semantic-border-primary shadow-elevation-1 transition outline-none focus:inset-ring-2 focus:inset-ring-semantic-border-brand-alt disabled:cursor-not-allowed gap-semantic-md px-semantic-xl py-semantic-xl"
+      id="_r_2t_"
+      role="combobox"
+      type="button"
+    >
+      <span
+        class="flex min-w-px flex-1 items-center gap-semantic-md"
+      >
+        <span
+          class="text-left text-desktop-body-sm shrink-0 font-medium text-semantic-text-primary"
+        >
+          Olivia Rhye
+        </span>
+        <span
+          class="shrink-0 font-normal text-semantic-text-secondary text-desktop-caption-md"
+        >
+          olivia
+        </span>
+      </span>
+      <span
+        aria-hidden="true"
+        class="inline-flex size-semantic-xl shrink-0 items-center justify-center overflow-clip text-semantic-fg-quinary *:size-full"
+      >
+        <svg
+          data-testid="chevron"
+        />
+      </span>
+    </button>
+  </div>
+  <p
+    class="w-full font-normal text-semantic-text-secondary text-desktop-caption-md"
+    id="_r_2t_-hint"
+  >
+    This is a hint text to help user.
+  </p>
+</div>
+`;
+
+exports[`InputDropdown > multi select > matches its rendered markup 1`] = `
+<div
+  class="flex w-full flex-col items-start font-sans gap-semantic-md"
+>
+  <div
+    class="flex w-full flex-col items-start gap-semantic-sm"
+  >
+    <div
+      class="flex items-center gap-semantic-xxs"
+    >
+      <span
+        class="font-medium text-semantic-text-primary text-desktop-caption-md"
+        id="_r_5i_-label"
+      >
+        Placeholder text
+      </span>
+    </div>
+    <div
+      aria-describedby="_r_5i_-hint"
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      aria-labelledby="_r_5i_-label"
+      class="flex w-full items-center overflow-clip rounded-md bg-semantic-bg-primary inset-ring inset-ring-semantic-border-primary shadow-elevation-1 transition outline-none focus:inset-ring-2 focus:inset-ring-semantic-border-brand-alt disabled:cursor-not-allowed gap-semantic-md px-semantic-xl py-[14px]"
+      id="_r_5i_"
+      role="combobox"
+      tabindex="0"
+    >
+      <span
+        class="flex shrink-0 items-center gap-semantic-lg"
+      >
+        <span
+          class="inline-flex items-center justify-center rounded-sm font-sans bg-semantic-bg-primary inset-ring inset-ring-semantic-border-primary py-semantic-xs gap-[3px] pl-[10px] pr-semantic-xs"
+        >
+          <span
+            class="flex items-center gap-semantic-sm"
+          >
+            <span
+              class="shrink-0 text-center font-medium whitespace-nowrap text-semantic-text-secondary text-mobile-body-md"
+            >
+              Olivia Rhye
+            </span>
+          </span>
+          <button
+            aria-label="Remove Olivia Rhye"
+            class="inline-flex shrink-0 cursor-pointer items-center justify-center p-semantic-xxs text-semantic-fg-quinary outline-none focus-visible:ring-2 focus-visible:ring-semantic-focus-ring focus-visible:ring-offset-2 focus-visible:ring-offset-semantic-bg-primary disabled:cursor-not-allowed"
+            type="button"
+          >
+            <span
+              aria-hidden="true"
+              class="size-[10px] shrink-0 *:size-full"
+            >
+              <svg
+                data-testid="x"
+              />
+            </span>
+          </button>
+        </span>
+        <span
+          class="inline-flex items-center justify-center rounded-sm font-sans bg-semantic-bg-primary inset-ring inset-ring-semantic-border-primary py-semantic-xs gap-[3px] pl-[10px] pr-semantic-xs"
+        >
+          <span
+            class="flex items-center gap-semantic-sm"
+          >
+            <span
+              class="shrink-0 text-center font-medium whitespace-nowrap text-semantic-text-secondary text-mobile-body-md"
+            >
+              Lana Steiner
+            </span>
+          </span>
+          <button
+            aria-label="Remove Lana Steiner"
+            class="inline-flex shrink-0 cursor-pointer items-center justify-center p-semantic-xxs text-semantic-fg-quinary outline-none focus-visible:ring-2 focus-visible:ring-semantic-focus-ring focus-visible:ring-offset-2 focus-visible:ring-offset-semantic-bg-primary disabled:cursor-not-allowed"
+            type="button"
+          >
+            <span
+              aria-hidden="true"
+              class="size-[10px] shrink-0 *:size-full"
+            >
+              <svg
+                data-testid="x"
+              />
+            </span>
+          </button>
+        </span>
+      </span>
+      <span
+        aria-hidden="true"
+        class="inline-flex size-semantic-xl shrink-0 items-center justify-center overflow-clip text-semantic-fg-quinary *:size-full"
+      >
+        <svg
+          data-testid="chevron"
+        />
+      </span>
+    </div>
+  </div>
+  <p
+    class="w-full font-normal text-semantic-text-secondary text-desktop-caption-md"
+    id="_r_5i_-hint"
+  >
+    This is a hint text to help user.
+  </p>
+</div>
+`;

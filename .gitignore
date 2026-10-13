@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+storybook-static
+coverage
+node_modules/.tmp
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# Local Claude Code configuration — never committed
+.claude/
+
+# Local environment files — never committed
+.env
+.env.*
+!.env.example
+
+# Reference material dropped in for comparison, not project source.
+# The frontend team's ui-kit archive is read locally; it is not part of this library.
+ui-kit.zip
+
+# Python bytecode from the token generators
+__pycache__/
+*.py[cod]
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*storybook.log

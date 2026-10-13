@@ -1,0 +1,72 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OtpInput > matches its rendered markup 1`] = `
+<div
+  class="inline-flex flex-col items-start gap-semantic-xs font-sans"
+>
+  <div
+    class="flex w-full flex-col items-start gap-semantic-md"
+  >
+    <label
+      class="text-mobile-body-md font-medium text-semantic-text-primary"
+      for="_r_28_-0"
+      id="_r_28_-label"
+    >
+      Verification code
+    </label>
+    <div
+      aria-describedby="_r_28_-hint"
+      aria-labelledby="_r_28_-label"
+      class="flex items-start gap-semantic-md cursor-pointer"
+      role="group"
+    >
+      <input
+        aria-label="Digit 1 of 4"
+        autocomplete="one-time-code"
+        class="size-semantic-6xl shrink-0 overflow-clip rounded-md px-semantic-md py-semantic-xxs text-mobile-heading-md text-center font-normal text-semantic-text-primary bg-semantic-bg-primary inset-ring inset-ring-semantic-border-primary shadow-elevation-1 transition outline-none focus:inset-ring-2 focus:inset-ring-semantic-border-brand-alt focus:shadow-[var(--shadow-elevation-1),0_0_0_2px_var(--color-semantic-bg-primary),0_0_0_4px_var(--color-semantic-focus-ring)]"
+        id="_r_28_-0"
+        inputmode="numeric"
+        type="text"
+        value=""
+      />
+      <input
+        aria-label="Digit 2 of 4"
+        autocomplete="one-time-code"
+        class="size-semantic-6xl shrink-0 overflow-clip rounded-md px-semantic-md py-semantic-xxs text-mobile-heading-md text-center font-normal text-semantic-text-primary bg-semantic-bg-primary inset-ring inset-ring-semantic-border-primary shadow-elevation-1 transition outline-none focus:inset-ring-2 focus:inset-ring-semantic-border-brand-alt focus:shadow-[var(--shadow-elevation-1),0_0_0_2px_var(--color-semantic-bg-primary),0_0_0_4px_var(--color-semantic-focus-ring)]"
+        id="_r_28_-1"
+        inputmode="numeric"
+        type="text"
+        value=""
+      />
+      <input
+        aria-label="Digit 3 of 4"
+        autocomplete="one-time-code"
+        class="size-semantic-6xl shrink-0 overflow-clip rounded-md px-semantic-md py-semantic-xxs text-mobile-heading-md text-center font-normal text-semantic-text-primary bg-semantic-bg-primary inset-ring inset-ring-semantic-border-primary shadow-elevation-1 transition outline-none focus:inset-ring-2 focus:inset-ring-semantic-border-brand-alt focus:shadow-[var(--shadow-elevation-1),0_0_0_2px_var(--color-semantic-bg-primary),0_0_0_4px_var(--color-semantic-focus-ring)]"
+        id="_r_28_-2"
+        inputmode="numeric"
+        type="text"
+        value=""
+      />
+      <input
+        aria-label="Digit 4 of 4"
+        autocomplete="one-time-code"
+        class="size-semantic-6xl shrink-0 overflow-clip rounded-md px-semantic-md py-semantic-xxs text-mobile-heading-md text-center font-normal text-semantic-text-primary bg-semantic-bg-primary inset-ring inset-ring-semantic-border-primary shadow-elevation-1 transition outline-none focus:inset-ring-2 focus:inset-ring-semantic-border-brand-alt focus:shadow-[var(--shadow-elevation-1),0_0_0_2px_var(--color-semantic-bg-primary),0_0_0_4px_var(--color-semantic-focus-ring)]"
+        id="_r_28_-3"
+        inputmode="numeric"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    class="flex items-center gap-semantic-xs text-semantic-text-quaternary"
+  >
+    <p
+      class="text-mobile-body-sm font-normal"
+      id="_r_28_-hint"
+    >
+      This is a hint text to help user.
+    </p>
+  </div>
+</div>
+`;

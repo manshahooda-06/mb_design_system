@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`IconButton > markup > matches the snapshot 1`] = `
+<button
+  aria-label="Close"
+  class="inline-flex items-center justify-center overflow-clip shadow-elevation-1 transition-colors cursor-pointer disabled:cursor-not-allowed aria-disabled:cursor-not-allowed aspect-square p-semantic-lg rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-semantic-focus-ring-error focus-visible:ring-offset-2 focus-visible:ring-offset-semantic-bg-primary disabled:text-semantic-fg-disabled aria-disabled:text-semantic-fg-disabled text-semantic-button-tertiary-error-fg hover:bg-semantic-button-tertiary-error-bg-hover hover:text-semantic-button-tertiary-error-fg-hover"
+  type="button"
+>
+  <span
+    aria-hidden="true"
+    class="inline-flex shrink-0 items-center justify-center *:size-full size-semantic-2xl"
+  >
+    <svg
+      data-testid="icon"
+    />
+  </span>
+</button>
+`;

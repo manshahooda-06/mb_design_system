@@ -1,0 +1,92 @@
+/*
+ * Everything Mozaic adds on top of Tailwind — **a partial, not an entry point.**
+ *
+ * Both published stylesheets import this after choosing how much of Tailwind they want:
+ *
+ *   index.css  → theme + preflight + utilities   (dist/styles.css)
+ *   embed.css  → theme + utilities, no preflight (dist/embed.css)
+ *
+ * It lives apart from either so the two cannot drift: the sources, the dark variant, the
+ * token layers and the font binding are declared once and shared.
+ */
+
+/*
+ * The Lexend Deca webfont, self-hosted.
+ *
+ * The typography foundation names the family — `--font-body: 'Lexend Deca'` — but naming
+ * a font does not load one. Without this the token resolved to a family the browser did
+ * not have and every surface silently fell back to a system face, which looked correct on
+ * any machine with Lexend Deca installed locally and wrong everywhere else.
+ *
+ * Self-hosted rather than fetched from Google Fonts: a published stylesheet that reaches a
+ * third party gives consuming apps a network request, a privacy exposure and a CSP entry
+ * they cannot opt out of. One variable file per subset covers the whole 100–900 axis,
+ * which spans every weight the foundation declares (300–800), in ~92KB.
+ */
+@import '@fontsource-variable/lexend-deca';
+
+/*
+ * Shipped component source.
+ *
+ * `.ts` matters as much as `.tsx`: every component declares its classes in
+ * `<Name>.variants.ts`, so a `*.tsx`-only glob scans the render functions and misses all
+ * of the styling — the component then ships with no utilities of its own and renders
+ * unstyled.
+ */
+@source './components/**/*.{ts,tsx}';
+
+/*
+ * Tests, stories and validation tooling are not shipped, so the classes written in them
+ * must not become published utilities — a class named only in an assertion is not a class
+ * the library uses. Storybook adds story files back as a source of its own in
+ * .storybook/storybook.css, so docs pages still render.
+ */
+@source not './components/**/*.test.{ts,tsx}';
+@source not './components/**/*.stories.{ts,tsx}';
+@source not './components/**/*.policy.ts';
+
+/* The shared focus indicator, applied by every interactive component. */
+@source './utils/a11y.ts';
+
+/*
+ * Class-based dark mode. Tailwind v4's `dark:` variant defaults to prefers-color-scheme;
+ * this repoints it at a `.dark` ancestor so consuming apps can offer an explicit theme
+ * toggle and can theme a subtree independently. Semantic colour tokens re-declare
+ * themselves under the same selector.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import './foundations/foundations.css';
+@import './semantic/semantic.css';
+
+/*
+ * Bind the inherited font family to the typography foundation.
+ *
+ * `--font-body` was an orphan: declaring it in `@theme` generates a `font-body` utility,
+ * but nothing applied it and no base rule set a family. Tailwind's preflight sets
+ * `html { font-family: var(--default-font-family, …) }`, and `--default-font-family`
+ * resolves to `--font-sans` — which this package never overrode, so Tailwind's built-in
+ * system stack won on every element, including every component.
+ *
+ * Pointing `--font-sans` at the foundation fixes both halves at once: the inherited
+ * default becomes Lexend Deca, and the `font-sans` utility stops being a silent escape
+ * hatch back to the system stack.
+ *
+ * **`'Lexend Deca Variable'` comes first on purpose.** The variable webfont is published
+ * under that family name, while Figma names the family `Lexend Deca`. Asking only for the
+ * Figma name matches a locally *installed* copy and silently ignores the one we ship —
+ * which looks perfect on a designer's machine and falls back to a system face for everyone
+ * else. That is precisely the failure this whole change exists to remove, so both names
+ * are listed: the served face first, the installed one as a fallback.
+ *
+ * This lives here rather than in the generated foundation because it is an integration
+ * decision, not a Figma value — the foundation states what the font *is*, and this states
+ * that it is the default and where it comes from. Components declare no family of their
+ * own; `font-family.test.ts` guards it.
+ *
+ * Note that `embed.css` ships no preflight, so there the binding only powers the
+ * `font-sans` utility — the host app keeps its own inherited family, which is the point.
+ */
+@theme {
+  --font-sans: 'Lexend Deca Variable', var(--font-body), sans-serif;
+}

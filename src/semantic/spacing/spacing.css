@@ -1,0 +1,41 @@
+/*
+ * Semantic spacing tokens.
+ *
+ * GENERATED FROM FIGMA — DO NOT EDIT BY HAND.
+ * Run `pnpm generate:semantic-spacing-tokens` after re-exporting. See
+ * docs/Semantic-Tokens.md for the full reference.
+ *
+ * Each token aliases a primitive spacing step rather than carrying its own
+ * value, and is emitted as a var() reference so a change to the primitive
+ * propagates automatically.
+ *
+ * Names are qualified --spacing-semantic-* so they cannot shadow Tailwind
+ * values in the same namespace. A bare --spacing-md would hijack max-w-md,
+ * w-md, min-w-md and basis-md, which read --container-* by default.
+ *
+ * They still live in the spacing namespace, so they produce ordinary spacing
+ * utilities: gap-semantic-md, p-semantic-xl, mt-semantic-xs.
+ *
+ * This scale is independent of the radius scale: a shared name such as `lg`
+ * or `2xl` may mean a different value in each. See docs/Semantic-Tokens.md.
+ */
+
+@theme static {
+  --spacing-semantic-none: var(--spacing-0); /* 0px via Spacing/0 (0px) */
+  --spacing-semantic-xxs: var(--spacing-0-5); /* 2px via Spacing/0․5 (2px) */
+  --spacing-semantic-xs: var(--spacing-1); /* 4px via Spacing/1 (4px) */
+  --spacing-semantic-sm: var(--spacing-1-5); /* 6px via Spacing/1․5 (6px) */
+  --spacing-semantic-md: var(--spacing-2); /* 8px via Spacing/2 (8px) */
+  --spacing-semantic-lg: var(--spacing-3); /* 12px via Spacing/3 (12px) */
+  --spacing-semantic-xl: var(--spacing-4); /* 16px via Spacing/4 (16px) */
+  --spacing-semantic-2xl: var(--spacing-5); /* 20px via Spacing/5 (20px) */
+  --spacing-semantic-3xl: var(--spacing-6); /* 24px via Spacing/6 (24px) */
+  --spacing-semantic-4xl: var(--spacing-8); /* 32px via Spacing/8 (32px) */
+  --spacing-semantic-5xl: var(--spacing-10); /* 40px via Spacing/10 (40px) */
+  --spacing-semantic-6xl: var(--spacing-12); /* 48px via Spacing/12 (48px) */
+  --spacing-semantic-7xl: var(--spacing-16); /* 64px via Spacing/16 (64px) */
+  --spacing-semantic-8xl: var(--spacing-20); /* 80px via Spacing/20 (80px) */
+  --spacing-semantic-9xl: var(--spacing-24); /* 96px via Spacing/24 (96px) */
+  --spacing-semantic-10xl: var(--spacing-32); /* 128px via Spacing/32 (128px) */
+  --spacing-semantic-11xl: var(--spacing-40); /* 160px via Spacing/40 (160px) */
+}
