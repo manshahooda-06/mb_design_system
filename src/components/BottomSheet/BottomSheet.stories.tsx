@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Button } from '../Button';
-import { BottomSheet } from './BottomSheet';
+import { BottomSheet, type BottomSheetType } from './BottomSheet';
 import { BOTTOM_SHEET_TYPES } from './constants';
 
 const TITLE = 'Placeholder content to be replaced';
@@ -46,11 +46,17 @@ const TwoActions = () => (
 /** Figma's `Type=1 button`: one brand action, spanning the row through `flex-1`. */
 const OneAction = () => <Button>Confirm</Button>;
 
-const FOOTER_OPTIONS: Record<string, React.ReactNode> = {
-  'Two buttons': <TwoActions />,
-  'One button': <OneAction />,
-  None: undefined,
-};
+/**
+ * Figma's `type` lives on the footer and names how many actions it holds, but the row
+ * itself renders whatever `footer` content it is given — `type` carries no layout
+ * difference of its own (see `BottomSheet.variants.ts`). So the interactive stories
+ * derive the footer's buttons from `type` directly, rather than exposing a second,
+ * independent control that could disagree with it: a real caller passes matching
+ * buttons by hand, but a Storybook control that silently drifts out of sync with
+ * `type` is just a confusing demo.
+ */
+const footerFor = (type: BottomSheetType) =>
+  type === 'one-button' ? <OneAction /> : <TwoActions />;
 
 /**
  * Figma's `_Content Block Placeholder`, reproduced for the stories only.
@@ -136,7 +142,6 @@ const meta = {
     closeIcon: 'cancel-01',
     closeLabel: 'Close',
     children: 'Figma’s placeholder block',
-    footer: 'Two buttons',
   },
   argTypes: {
     header: { control: 'text', description: '**Figma property** `header`. No default copy ships.' },
@@ -161,8 +166,10 @@ const meta = {
       options: BOTTOM_SHEET_TYPES,
       description:
         '**Figma property** `type`, published on the nested `_Footer` — `2 buttons` and ' +
-        '`1 button`. Both draw the same row; pass the matching number of actions to ' +
-        '`footer`, and `flex-1` sizes them.',
+        '`1 button`. Both draw the same row; the row itself renders whatever `footer` ' +
+        'content it is given, which is why these stories derive it from `type` directly ' +
+        'rather than exposing a second control that could fall out of sync with it. A ' +
+        'real caller passes the matching `Button`s by hand.',
     },
     children: {
       options: Object.keys(CONTENT_OPTIONS),
@@ -173,10 +180,11 @@ const meta = {
         'the sheet renders whatever you put here and nothing otherwise.',
     },
     footer: {
-      options: Object.keys(FOOTER_OPTIONS),
-      mapping: FOOTER_OPTIONS,
-      control: { type: 'select' },
-      description: '**Composition.** The caller’s `Button`s; the row sizes them equally.',
+      control: false,
+      description:
+        '**Composition.** The caller’s `Button`s; the row sizes them equally. Not an ' +
+        'interactive control here — these stories derive it from `type` so the two ' +
+        'cannot disagree; see `type` above.',
     },
     closeIcon: {
       options: Object.keys(CLOSE_ICON_OPTIONS),
@@ -191,7 +199,7 @@ const meta = {
   },
   render: (args) => (
     <Phone>
-      <BottomSheet {...args} />
+      <BottomSheet {...args} footer={footerFor(args.type ?? 'two-buttons')} />
     </Phone>
   ),
 } satisfies Meta<typeof BottomSheet>;
@@ -217,7 +225,7 @@ export const WithoutLeftIcon: Story = {
 
 /** Figma's `showFooter` on: two equal-width actions, 16 a side and 4 above and below. */
 export const WithFooter: Story = {
-  args: { showFooter: true, footer: 'Two buttons' },
+  args: { showFooter: true, type: 'two-buttons' },
 };
 
 /**
@@ -225,7 +233,7 @@ export const WithFooter: Story = {
  * two-action footer uses — `flex-1` is what makes one button fill it.
  */
 export const OneButtonFooter: Story = {
-  args: { type: 'one-button', footer: 'One button' },
+  args: { type: 'one-button' },
 };
 
 /** Figma's `showFooter` off: the card ends after the content, keeping its 24 bottom padding. */
