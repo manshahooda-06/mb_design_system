@@ -119,11 +119,10 @@ const TYPEAHEAD_RESET_MS = 500;
 /**
  * A select field with a dropdown menu.
  *
- * Measured from Figma `Input dropdown` (node 5265:8766). This implements
- * **`type=Default`** at both devices across all five states — **10 of 20
- * variants**. `type=multi select` is still unbuilt but **no longer blocked**: its
- * field renders selected values as Tag instances and its menu rows embed a
- * Checkbox, and both components now exist.
+ * Measured from Figma `Input dropdown` (node 5265:8766). Implements **all 20
+ * variants**: `type=Default` and `type=multiSelect`, each at both devices across
+ * all five states. `multiSelect`'s field renders selected values as Tag
+ * instances and its menu rows lead with a Checkbox instead of a trailing tick.
  *
  * `device` is Figma's own axis, not a size scale. Desktop and mobile disagree on
  * padding, field height, every gap and the whole type ramp.

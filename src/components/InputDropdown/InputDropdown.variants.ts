@@ -5,11 +5,10 @@ import { defineVariants, type VariantProps } from '@utils/variants';
  *
  * Measured from Figma `Input dropdown` (node 5265:8766, 20 variants) and its
  * nested item set `_dropdown menu item` (node 5265:9000, 16 variants). This file
- * implements `type=Default` only — 10 of the 20 dropdown variants. The 10
- * `multi select` variants are **no longer blocked**: they need a Tag for each
- * selected value and a Checkbox on each menu row, and both components now exist.
- * Figma instances `Checkbox` at `Size=md, Text=False` (nodes 5265:8961–8965) and
- * `Tag` at `lg`, so nothing further is required to build them.
+ * implements all 20 dropdown variants: `type=Default` and `type=multiSelect`,
+ * each across both devices. `multiSelect` renders a Tag for each selected value
+ * and a Checkbox on each menu row — Figma instances `Checkbox` at `Size=md,
+ * Text=False` (nodes 5265:8961–8965) and `Tag` at `lg`.
  *
  * The axis here is `device`, not a size scale. Desktop and mobile are two separate
  * sets of measurements — padding 16 against 12, a 56 field against 44, the Desktop

@@ -54,11 +54,10 @@ const meta = {
       description: {
         component:
           'A select field with a dropdown menu, measured from Figma `Input dropdown` ' +
-          '(node 5265:8766).\n\n' +
-          'This implements **`type=Default`** at both devices across all five states — ' +
-          '**10 of 20 variants**. `type=multi select` is deferred: its field renders selected ' +
-          'values as Tag instances and its menu rows embed a Checkbox, and neither component ' +
-          'exists yet.\n\n' +
+          '(node 5265:8766). Implements **all 20 variants**: `type=Default` and ' +
+          '`type=multiSelect`, each at both devices across all five states. ' +
+          '`multiSelect`’s field renders selected values as Tag instances and its menu ' +
+          'rows lead with a Checkbox instead of a trailing tick.\n\n' +
           '`device` is Figma’s own axis, not a size scale — desktop and mobile disagree on ' +
           'padding, field height, every gap and the whole type ramp.\n\n' +
           'Two behaviours reproduce Figma rather than improving on it: opening shows the ' +
@@ -79,6 +78,8 @@ const meta = {
     options: { control: false },
     chevron: { control: false },
     tick: { control: false },
+    checkIcon: { control: false },
+    tagCloseIcon: { control: false },
     classNames: { control: false },
     value: { control: false },
     open: { control: false },
@@ -91,6 +92,14 @@ const meta = {
     options: PEOPLE,
     chevron: <ChevronIcon />,
     tick: <TickIcon />,
+    // Set at the meta level, not only in `multiArgs` below: `type` is switchable
+    // right from the Playground controls (Storybook infers it from the prop
+    // union), and without a default here, flipping to `multiSelect` there renders
+    // a checked-but-blank checkbox — Checkbox never draws its own tick, so a
+    // missing `checkIcon` is a filled box with nothing inside it, not a visible
+    // fallback glyph.
+    checkIcon: <CheckIcon />,
+    tagCloseIcon: <CloseIcon />,
   },
 } satisfies Meta<typeof InputDropdown>;
 
@@ -252,12 +261,9 @@ export const Accessibility: Story = {
 /* type="multiSelect" — Figma's other 10 variants                             */
 /* -------------------------------------------------------------------------- */
 
-const multiArgs = {
-  type: 'multiSelect',
-  chevron: <ChevronIcon />,
-  tagCloseIcon: <CloseIcon />,
-  checkIcon: <CheckIcon />,
-} as const;
+// chevron, tagCloseIcon and checkIcon now come from meta.args — kept there,
+// not only here, so the Playground's own `type` control has them too.
+const multiArgs = { type: 'multiSelect' } as const;
 
 /**
  * Multi select at both devices.
